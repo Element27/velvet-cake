@@ -1,0 +1,231 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Sans-Serif;
+}
+
+
+Section {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.container {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 2px 2px 2px 2px #12121277;
+  /* border: 1px solid red; */
+  position: relative;
+
+}
+
+
+
+/*cake img */
+
+.cake-img img {
+  width: 100%;
+}
+
+/* price info */
+.price-info{
+  position: absolute;
+  bottom: 50px;
+  left: 30%;
+  color: #fff;
+}
+
+.price-info h1{
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.price-info h2{
+  font-size: 28px;
+  font-weight: 700;
+}
+/* form */
+.form-container {
+  width: 100%;
+  Padding: 0 15px;
+  text-align: center;
+}
+
+/* Logo */
+.form-logo {
+  margin: 24px auto;
+}
+
+.form-logo Span {
+  color: #fe734c;
+}
+
+/*form header */
+.form-header {
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 1px solid #fe734c;
+  margin-bottom: 18px;
+
+}
+
+.form-header .icon{
+  width: 32px;
+}
+
+.form-header h4{
+  display: none;
+}
+
+.form-logo{
+  margin: 50px auto;
+}
+
+.form-logo h2{
+  font-size: 44px;
+  font-weight: 700;
+}
+.form-header{
+  margin: 50px auto;
+}
+
+.form-header h4{
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.form-header .credit-card,
+.form-header .PayPal,
+.form-header .apple-pay{
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+.form-header h4 {
+  font-size: 14px;
+  Padding: 10px;
+  /* border-bottom: 1px solid #fe734c; */
+}
+
+.form-header .credit-card {
+  border-bottom: 2px solid #fe734c;
+}
+
+/* form body*/
+.form-input {
+  display: flex;
+  flex-direction: column;
+  Text-align: left;
+}
+
+.form-body label{
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.form-input input {
+  border: 1px solid #fe734c;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  Height: 50px;
+  padding: 5px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+
+.form-input .expiry {
+  Background: none;
+}
+
+.cvv-expiry {
+  display: flex;
+  flex-direction: column;
+}
+
+.cvv-expiry .input {
+  width: 100%;
+}
+
+@media screen and (min-width:789px) {
+
+  Section {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .container {
+    display: flex;
+    padding :0;
+    /* align-items: center; */
+    /* justify-content: center; */
+    margin-top: 20px;
+  }
+
+
+  .cake-img {
+    /* border: 1px solid yellow; */
+    width: 50%;
+  }
+
+  .cake-img img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .form-container {
+    width: 50%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .form-logo h2{
+    font-size: 44px;
+    font-weight: 700;
+    margin-bottom: 10%;
+  }
+  .form-header{
+    margin-bottom: 10%;
+  }
+  .form-header .icon{
+    width: 14px;
+    margin: 0;
+  }
+    .form-header h4{
+    font-size: 18px;
+    font-weight: 700;
+    display: block;
+  }
+
+  .form-body label{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+  .form-body .card-name{
+    margin-bottom: 0;
+  }
+
+  .cvv-expiry {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .cvv,
+  .expiry {
+    width: 100%;
+  }
+
+  .cvv input,
+  .expiry input {
+    width: 90%;
+  }
+
+}
